@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merry Cris Segisa | Personal Portfolio</title>
+  <meta name="description" content="Personal portfolio of Merry Cris Segisa, a 3rd year Computer Science student at NEMSU-LC.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="#home">My Portfolio</a>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="tools" role="group" aria-label="Display settings">
+        <button type="button" id="text-down" aria-label="Decrease text size">A&minus;</button>
+        <button type="button" id="text-up" aria-label="Increase text size">A+</button>
+        <button type="button" id="theme-toggle" aria-pressed="false">Light mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ================= HOME ================= -->
+    <section id="home" class="hero" aria-labelledby="home-h">
+  <div class="hero-text">
+    <h1 id="home-h">Hi, I'm
+      <span class="visually-hidden">Merry Cris Segisa</span>
+      <span id="typing" aria-hidden="true" data-text="Merry Cris Segisa">Merry Cris Segisa</span>
+    </h1>
+    <p>I am a 3rd year Computer Science student at <abbr title="North Eastern Mindanao State University">NEMSU</abbr>-LC.</p>
+    <a class="btn" href="#project">View Projects</a>
+  </div>
+  <img class="hero-photo" src="mc.jpg" alt="Merry Cris Segisa singing on stage into a microphone">
+</section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="project" aria-labelledby="project-h">
+      <h2 id="project-h">My Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- EDIT: change the alt text so it matches what is really in your pictures -->
+        <article class="card"
+          data-media='[{"type":"image","src":"robot1.jpg","alt":"4WD robot chassis with wheels and motors"},{"type":"image","src":"robot2.jpg","alt":"Mechanical arm with servo joints mounted on the robot"},{"type":"image","src":"robot3.jpg","alt":"Completed robot with Arduino board and wiring"}]'>
+          <img src="robot1.jpg" alt="4WD robot chassis with a mechanical arm">
+          <h3><abbr title="four-wheel drive">4WD</abbr> Robotic Mechanical Arm</h3>
+          <p>We are working as a team to assemble the 4WD chassis and program the mechanical arm's servo joints using an Arduino, taking our project from raw components to a functional Bluetooth-controlled robot.</p>
+          <button type="button" class="btn view-btn" aria-label="View 4WD robotic mechanical arm project media">View</button>
+        </article>
+
+        <article class="card"
+          data-media='[{"type":"image","src":"diorama.jpg","alt":"Miniature city diorama with handmade houses and buildings"}]'>
+          <img src="diorama.jpg" alt="Miniature city diorama with handmade houses and buildings">
+          <h3>Diorama</h3>
+          <p>A detailed diorama we built, where we crafted an entire miniature city from scratch, including all kinds of houses, buildings, and special features that make it feel real and meaningful.</p>
+          <button type="button" class="btn view-btn" aria-label="View diorama project media">View</button>
+        </article>
+
+        <article class="card"
+          data-media='[{"type":"image","src":"scrapbook.jpg","alt":"Handmade scrapbook page about self-discovery and personal beliefs"}]'>
+          <img src="scrapbook.jpg" alt="Handmade scrapbook page about self-discovery and personal beliefs">
+          <h3>Scrapbook</h3>
+          <p>A heartfelt, handmade scrapbook page, part of a personal project about self-discovery, my perspective on religion, and the core beliefs that shape who I am.</p>
+          <button type="button" class="btn view-btn" aria-label="View scrapbook project media">View</button>
+        </article>
+
+        <article class="card"
+          data-media='[{"type":"image","src":"agriva.jpg","alt":"Agriva project cover image"},{"type":"youtube","src":"https://www.youtube.com/embed/IhC0h352x88?cc_load_policy=1&amp;rel=0","alt":"Agriva project video with captions"}]'>
+          <img src="agriva.jpg" alt="Agriva project cover image">
+          <h3>Agriva</h3>
+          <p>This project tackles big problems in our society, like too much farm waste that hurts the environment and makes it hard for farmers to earn money. Our solution is AGRIVA.</p>
+          <button type="button" class="btn view-btn" aria-label="View Agriva project media and video">View</button>
+        </article>
+
+        <article class="card"
+          data-media='[{"type":"image","src":"multimed.jpg","alt":"Anime character design of Ichigo Kurosaki from Bleach"}]'>
+          <img src="multimed.jpg" alt="Anime character design of Ichigo Kurosaki from Bleach">
+          <h3>Multimedia</h3>
+          <p>Our instructor tasked us to create an anime character design. We chose Ichigo Kurosaki from the anime Bleach, drawing inspiration from his strong and iconic presence.</p>
+          <button type="button" class="btn view-btn" aria-label="View multimedia project media">View</button>
+        </article>
+
+      </div>
+
+      <!-- 1.2 Time-based media: transcript for the Agriva video -->
+      <details class="transcript">
+        <summary>Read the Agriva video transcript</summary>
+        <!-- EDIT: paste the real words from the video. On YouTube: click "...more" > "Show transcript" -->
+        <p>Transcript: type or paste what is said and shown in the Agriva video here.</p>
+      </details>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About Me</h2>
+      <div class="about-card">
+        <img src="mc.jpg" alt="Portrait of Merry Cris Segisa">
+        <p>A passionate and friendly individual who believes in continuous growth and self-improvement. As a Roman Catholic, my faith guides me to stay humble, grateful, and strong through every challenge. I enjoy learning new things and improving myself little by little each day.</p>
+        <p>Outside of academics, I love singing and dancing because they let me express myself and bring joy to others. I try to stay positive, kind, and true to who I am while working toward my goals.</p>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact Me</h2>
+
+      <ul class="contact-list">
+        <li class="contact-card">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          <h3>Facebook</h3>
+          <!-- EDIT: if you want, turn this into a link to your profile -->
+          <p>Merry Cris Segisa</p>
+        </li>
+        <li class="contact-card">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:segisamerrycris@gmail.com">segisamerrycris@gmail.com</a></p>
+        </li>
+        <li class="contact-card">
+          <i class="fas fa-phone" aria-hidden="true"></i>
+          <h3>Cellphone</h3>
+          <p><a href="tel:+639319349589">09319349589</a></p>
+        </li>
+        <li class="contact-card">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <h3>Instagram</h3>
+          <p><a href="https://www.instagram.com/sirc_chaaaaa/">@sirc_chaaaaa</a></p>
+        </li>
+      </ul>
+
+      <h3 class="form-title">Send me a message</h3>
+      <p>Fields marked with an asterisk (*) are required.</p>
+
+      <div id="error-summary" class="summary" role="alert" tabindex="-1" hidden>
+        <h4>Please fix the following:</h4>
+        <ul id="error-list"></ul>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <label for="name">Full name *</label>
+        <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+        <p id="name-error" class="error"></p>
+
+        <label for="email">Email address * <span class="hint">Example: juan@example.com</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+        <p id="email-error" class="error"></p>
+
+        <label for="message">Message * <span class="hint">At least 10 characters</span></label>
+        <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+        <p id="message-error" class="error"></p>
+
+        <button type="submit" class="btn">Send message</button>
+      </form>
+      <p id="form-status" class="status" role="status"></p>
+    </section>
+
+  </main>
+
+  <!-- ================= MODAL (project viewer) ================= -->
+  <div id="project-modal" class="modal" hidden>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h2 id="modal-title" class="modal-title">Project</h2>
+      <button type="button" class="close" id="modal-close"><span aria-hidden="true">&times;</span> Close</button>
+
+      <div class="modal-media">
+        <img id="modal-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" hidden>
+        <video id="modal-video" controls preload="metadata" hidden></video>
+        <iframe id="modal-yt" title="Project video" allow="encrypted-media; picture-in-picture" allowfullscreen hidden></iframe>
+      </div>
+
+      <p id="modal-caption" class="caption" aria-live="polite"></p>
+
+      <div class="controls" id="modal-controls">
+        <button type="button" id="prev">Previous</button>
+        <button type="button" id="next">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Merry Cris Segisa. Built to follow <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1.</p>
+    <p><a href="#main">Back to top</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
